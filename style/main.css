@@ -1,0 +1,100 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body {
+  background: var(--preto);
+  font-family:Arial, Helvetica, sans-serif;
+  color: white;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  color: var(--vermelho);
+  font-family: arial black, "Times New Roman", Times, serif;
+  font-size: 40px;
+  margin-left: 5px;
+}
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+header nav a:hover {
+  color: #fff;
+}
+
+/* filme principal*/
+.filme_principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url(/img/dog.jpg);
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 5%;
+}
+.filme_principal .descricao {
+  margin-top: 10px;
+}
+.filme_principal .botoes {
+  margin-top: 30px;
+}
+.filme_principal .titulo {
+  margin-top: 30%;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 40px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+.botao .link{
+    color: white;
+    text-decoration: none;
+}
+.botao i{
+    margin-right: 8px;
+    
+    }
+.container{
+    margin-left: 20px;
+}
+.filme_principal .container{
+    width: 60%;
+    
+}
+.box_filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrossel_filmes{
+    margin-top: 5px;
+}
